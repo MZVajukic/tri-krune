@@ -9,45 +9,54 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Home</title>
+    <link rel="stylesheet" href="css/indexStyle.css">
+    <script src="script/index.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <div class="topnav">
-            <div class="dropdown">
-                <button class="dropbtn">KATEGORIJE
-                    <i class="fa fa-caret-down"></i>
-                  </button>
-                <div class="dropdown-content">
-                    <a href="#">Rođendani</a>
-                    <a href="#">Venčanja</a>
-                    <a href="#">Praznici</a>
-                </div>
+	<div class="navbar">
+        <a href="#">PROIZVODI</a>
+        <div class="dropdown">
+            <button class="dropbtn">KATEGORIJE
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Venčanja</a>
+                <a href="#">Rođendani</a>
+                <a href="#">Proslave</a>
             </div>
-            <a href="#product">PROIZVODI</a>
-            <a href="#contact">KONTAKT</a>
-            <a href="#delivery">DOSTAVA</a>
-            <a href="#blog">BLOG</a>
-            <div class="product-card-btn">
-                <a href="" class="product-search-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
-                <a href="" class="product-cart-btn"><i class="fa-solid fa-cart-shopping"></i></a>
-              </div>
         </div>
+        <a href="#">BLOG</a>
+        <a href="#">KONTAKT</a>
+        <a href="#">DOSTAVA</a>
 
-        <div class="main-image">
-         <img src="tri-krune-logo.png" alt="tri krune">
-            <div class="main-title">
-                <img src="tri-krune-logo.png" alt="tri krune">
-                <h1>Savršen poklon za Vaše najmilije!<br> Obradujete ih odmah!
-                </h1>
-                <button class="order-button" type="button">PORUČI</button>
-            </div>
+        <div class="nav-btn">
+            <a href="#"><i class="fa fa-search"></i></a>
+            <a href="#"><i class="fa fa-shopping-cart"></i></a>
         </div>
+    </div>
+
+    <div class="main-container">
+        <img src="./database/tri-krune-slike-1440px/main_img.jpg" alt="birthday present" style="width:100%" ;>
+        <img src="./database/tri-krune-slike-1440px/tri-krune-logo.jpg" alt="tri krune"
+            style="position: absolute; width:170px; height:170px; left:80px; border-radius: 50%;margin-top:10px;">
+        <div class="main-title">Savršen poklon za Vaše najmilije!<br> Obradujete ih odmah!</div>
+        <button class="order-button" type="button">PORUČI</button>
+
+    </div>
 
         <div>
-            <h2>Najtraženiji proizvodi</h2>
-            <div id="product-cards-container"></div>
-          </div>
+			<h2>Najtraženiji proizvodi</h2>
+			<div id="product-cards-container"></div>
+		</div>
+		<button onclick="updateProductCards()">Update Product Cards</button>
+
+		<h2>Venčanja/rođendani/praznici</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+		<div id="gifts">
+			<div id="showcase"></div>
+		</div>
+</body>
 
 </body>
 

@@ -20,46 +20,49 @@
 	border: none;
 }
 
-.topnav {
+.navbar {
 	overflow: hidden;
-	background-color: #fff;
-	font-family: Arial, Helvetica, sans-serif;
-	margin: auto;
+	background-color: hsl(0, 18%, 93%);
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	padding-left: 420px;
+	padding-right: 25px;
 }
 
-.topnav a {
-	float: none;
-	color: rgb(21, 21, 21);
+.navbar a {
+	float: left;
+	font-size: 18px;
+	color: black;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-	font-size: 16px;
 }
 
 .dropdown {
-	float: none;
+	float: left;
 	overflow: hidden;
 }
 
 .dropdown .dropbtn {
-	font-size: 16px;
+	font-size: 18px;
 	border: none;
 	outline: none;
-	color: rgb(21, 21, 21);
+	color: black;
 	padding: 14px 16px;
 	background-color: inherit;
 	font-family: inherit;
+	margin: 0;
 }
 
-.topnav a:hover,
+.navbar a:hover,
 .dropdown:hover .dropbtn {
-	background-color: #a99999;
+	background-color: #f9085fb8;
+	color: white;
 }
 
 .dropdown-content {
 	display: none;
 	position: absolute;
-	background-color: #fff;
+	background-color: #f9f9f9;
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	z-index: 1;
@@ -67,20 +70,65 @@
 
 .dropdown-content a {
 	float: none;
-	color: rgb(21, 21, 21);
+	color: black;
 	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
 	text-align: left;
 }
 
-
 .dropdown-content a:hover {
-	background-color: #a99999;
+	background-color: #ddd;
+	color: black;
 }
 
 .dropdown:hover .dropdown-content {
 	display: block;
+}
+
+.nav-btn {
+	float: right;
+	color: black;
+	text-decoration: none;
+}
+
+h2 {
+	font-size: 88px;
+	font-weight: 400;
+	font-family: 'IngridDarling';
+	text-align: left;
+	line-height: 90px;
+}
+
+.main-container {
+	position: relative;
+	margin-top: 10px;
+}
+
+.main-title {
+	position: absolute;
+	top: 40%;
+	left: 30%;
+	transform: translate(-50%, -50%);
+	font-family: 'IngridDarling';
+	font-size: 85px;
+	font-weight: 400;
+	text-align: left;
+	color: rgb(138, 78, 78);
+}
+
+.order-button {
+	padding: 10px 20px;
+	background-color: #f9085fb8;
+	color: white;
+	font-size: 20px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	border-radius: 20px;
+	margin-top: 15px;
+	justify-self: center;
+	position: absolute;
+	bottom: 300px;
+	left: 100px;
 }
 
 .product-card-btn {
